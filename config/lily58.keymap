@@ -72,7 +72,7 @@
       bindings = <&sl 3>;
       slow-release;
     };
-  }
+  };
 
   keymap {
     compatible = "zmk,keymap";
