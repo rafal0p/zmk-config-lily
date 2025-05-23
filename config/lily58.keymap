@@ -53,17 +53,17 @@
 
     // fake outer columns
     combo_esc {
-      key-positions = <12 13>;
+      key-positions = <13 14>;
       bindings = <&kp ESC>;
       slow-release;
     };
     combo_tab {
-      key-positions = <24 25>;
+      key-positions = <25 26>;
       bindings = <&kp TAB>;
       slow-release;
     };
     combo_grave {
-      key-positions = <36 37>;
+      key-positions = <37 38>;
       bindings = <&kp GRAVE>;
       slow-release;
     };
