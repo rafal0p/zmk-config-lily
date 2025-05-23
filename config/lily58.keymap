@@ -51,6 +51,38 @@
       slow-release;
     };
 
+    // fake outer columns
+    combo_esc {
+      key-positions = <12 13>;
+      bindings = <&kp ESC>;
+      slow-release;
+    };
+    combo_tab {
+      key-positions = <24 25>;
+      bindings = <&kp TAB>;
+      slow-release;
+    };
+    combo_grave {
+      key-positions = <36 37>;
+      bindings = <&kp GRAVE>;
+      slow-release;
+    };
+    combo_equal {
+      key-positions = <21 22>;
+      bindings = <&kp EQUAL>;
+      slow-release;
+    };
+    combo_sqt {
+      key-positions = <33 34>;
+      bindings = <&kp SQT>;
+      slow-release;
+    };
+    combo_bslh {
+      key-positions = <47 48>;
+      bindings = <&kp BSLH>;
+      slow-release;
+    };
+
     // layers
     combo_r_lower {
       key-positions = <31 55>;
@@ -117,7 +149,7 @@
 &trans &trans   &kp F7 &kp F8 &kp F9 &kp F10               &kp ASTRK &kp N7 &kp N8 &kp N9 &kp PLUS   &trans
 &trans &kp BSPC &kp F4 &kp F5 &kp F6 &kp F11               &kp SLASH &kp N4 &kp N5 &kp N6 &kp MINUS  &trans
 &trans &trans   &kp F1 &kp F2 &kp F3 &kp F12 &trans &trans &kp BSPC  &kp N1 &kp N2 &kp N3 &kp KP_DOT &kp COMMA
-                       &trans &trans &trans  &trans &trans &trans    &kp N0 &trans
+                       &trans &trans &trans  &trans &trans &kp N0    &trans &trans
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
