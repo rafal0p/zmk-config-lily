@@ -104,6 +104,16 @@
       bindings = <&sl 3>;
       slow-release;
     };
+    combo_r_config {
+      key-positions = <30 31>;
+      bindings = <&sl 4>;
+      slow-release;
+    };
+    combo_l_config {
+      key-positions = <28 29>;
+      bindings = <&sl 4>;
+      slow-release;
+    };
   };
 
   keymap {
@@ -152,6 +162,16 @@
                        &trans &trans &trans  &trans &trans &kp N0    &trans &trans
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    };
+
+    config_layer {
+      bindings = <
+&trans &trans      &trans       &trans       &trans       &trans                     &trans       &trans       &trans       &trans       &trans      &trans
+&trans &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3               &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR  &trans
+&trans &bootloader &kp LG(LBKT) &kp LG(RBKT) &trans       &trans                     &trans       &trans       &kp LG(LBKT) &kp LG(RBKT) &bootloader &trans
+&trans &trans      &trans       &trans       &trans       &trans       &trans &trans &trans       &trans       &trans       &trans       &trans      &trans
+                                &trans       &trans       &trans       &trans &trans &trans       &trans       &trans
+      >;
     };
   };
 };
